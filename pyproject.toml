@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "py-zalo"
+version = "1.0.0"
+description="Pretty simple and fully asynchronous framework for working with Zalo"
+authors = ["bxdoan <hi@bxdoan.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ed25519 = "^1.5"
+aiohttp = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+mypy = "^0.930"
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+Sphinx = "^4.3.2"
+sphinx-rtd-theme = "^1.0.0"
+base58 = "^2.1.1"
+
+[project]
+name = "py-zalo"
+version = "1.0.0"
+description = "Pretty simple and fully asynchronous framework for working with Zalo"
+authors = [ {name = "bxdoan", email = "hi@bxdoan.com"} ]
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+dependencies=["base58", "ed25519", "aiohttp"]
+keywords = ["python", "zalo", "async"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools.package-data]
+mypkg = ["*.py"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+homepage = "https://github.com/bxdoan/py-zalo"
+repository = "https://github.com/bxdoan/py-zalo"
+changelog = "https://github.com/bxdoan/py-zalo/blob/main/CHANGELOG.md"
+funding = "https://opencollective.com/py-zalo"
